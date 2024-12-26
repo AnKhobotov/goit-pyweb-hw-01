@@ -131,6 +131,7 @@ def input_error(func):
     return inner
 
 class Input(ABC):
+    @abstractmethod
     def parse_input(self):
         pass
 
